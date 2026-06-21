@@ -1,0 +1,26 @@
+owner: unicornops
+repo: dollarbox-status
+
+sites:
+  - name: Control panel
+    url: https://app.dollarbox.dev
+    expectedResponseCodes: [200, 302]
+  - name: Marketing site
+    url: https://dollarbox.dev
+  - name: Billing
+    url: https://app.dollarbox.dev/billing/
+    expectedResponseCodes: [200, 302]
+  - name: Signup
+    url: https://app.dollarbox.dev/accounts/signup/
+    expectedResponseCodes: [200, 302]
+
+status-website:
+  cname: status.dollarbox.dev
+  name: DollarBox Status
+  introTitle: "DollarBox service status"
+  introMessage: "Probed automatically every 5 minutes. To report an issue, email abuse@dollarbox.dev."
+  navbar:
+    - title: Status
+      href: /
+    - title: DollarBox
+      href: https://dollarbox.dev
