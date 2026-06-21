@@ -16,6 +16,7 @@ sites:
 
 status-website:
   cname: status.dollarbox.dev
+  publish: true
   name: DollarBox Status
   introTitle: "DollarBox service status"
   introMessage: "Probed automatically every 5 minutes. To report an issue, email abuse@dollarbox.dev."
