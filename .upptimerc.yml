@@ -3,16 +3,13 @@ repo: dollarbox-status
 
 sites:
   - name: Control panel
-    url: https://app.dollarbox.dev
-    expectedResponseCodes: [200, 302]
+    url: https://app.dollarbox.dev/accounts/login/
   - name: Website
     url: https://dollarbox.dev
   - name: Billing
-    url: https://app.dollarbox.dev/billing/
-    expectedResponseCodes: [200, 302]
+    url: https://app.dollarbox.dev/accounts/login/?next=/billing/
   - name: Signup
     url: https://app.dollarbox.dev/accounts/signup/
-    expectedResponseCodes: [200, 302]
 
 status-website:
   cname: status.dollarbox.dev
