@@ -22,6 +22,10 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ github.token }}
+      - name: Use Node 18 (Sapper compatibility)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
       - name: Update response time
         uses: upptime/uptime-monitor@v1.43.0
         with:
