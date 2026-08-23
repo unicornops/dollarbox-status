@@ -1,7 +1,7 @@
 url: https://app.dollarbox.dev/accounts/signup/
-status: up
-code: 200
-responseTime: 461
-lastUpdated: 2026-08-22T23:02:42.473Z
+status: down
+code: 500
+responseTime: 945
+lastUpdated: 2026-08-23T11:49:30.738Z
 startTime: 2026-06-21T16:53:48.550Z
 generator: Upptime <https://github.com/upptime/upptime>
