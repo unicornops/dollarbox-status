@@ -4,19 +4,19 @@
     "url": "https://app.dollarbox.dev/accounts/login/",
     "icon": "https://icons.duckduckgo.com/ip3/app.dollarbox.dev.ico",
     "slug": "control-panel",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.95%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 597,
-    "timeDay": 942,
-    "timeWeek": 625,
-    "timeMonth": 579,
-    "timeYear": 597,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "97.73%",
+    "uptimeWeek": "99.68%",
+    "uptimeMonth": "99.93%",
+    "uptimeYear": "99.96%",
+    "time": 602,
+    "timeDay": 948,
+    "timeWeek": 663,
+    "timeMonth": 591,
+    "timeYear": 602,
     "dailyMinutesDown": {
-      "2026-08-23": 1
+      "2026-08-23": 33
     }
   },
   {
@@ -42,19 +42,19 @@
     "url": "https://app.dollarbox.dev/accounts/login/?next=/billing/",
     "icon": "https://icons.duckduckgo.com/ip3/app.dollarbox.dev.ico",
     "slug": "billing",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 560,
-    "timeDay": 3141,
-    "timeWeek": 1115,
-    "timeMonth": 633,
-    "timeYear": 560,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "97.75%",
+    "uptimeWeek": "99.68%",
+    "uptimeMonth": "99.93%",
+    "uptimeYear": "99.96%",
+    "time": 558,
+    "timeDay": 2239,
+    "timeWeek": 1039,
+    "timeMonth": 627,
+    "timeYear": 558,
     "dailyMinutesDown": {
-      "2026-08-23": 0
+      "2026-08-23": 32
     }
   },
   {
@@ -62,19 +62,19 @@
     "url": "https://app.dollarbox.dev/accounts/signup/",
     "icon": "https://icons.duckduckgo.com/ip3/app.dollarbox.dev.ico",
     "slug": "signup",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 383,
-    "timeDay": 703,
-    "timeWeek": 387,
-    "timeMonth": 367,
-    "timeYear": 383,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "97.77%",
+    "uptimeWeek": "99.68%",
+    "uptimeMonth": "99.93%",
+    "uptimeYear": "99.96%",
+    "time": 384,
+    "timeDay": 611,
+    "timeWeek": 391,
+    "timeMonth": 369,
+    "timeYear": 384,
     "dailyMinutesDown": {
-      "2026-08-23": 0
+      "2026-08-23": 32
     }
   }
 ]
