@@ -18,35 +18,35 @@ jobs:
       issues: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ github.token }}
       - name: Use Node 18 (Sapper compatibility)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: '18'
       - name: Update response time
-        uses: upptime/uptime-monitor@v1.43.0
+        uses: upptime/uptime-monitor@8be193bbcb957a3a917d2bb16a0c96959778a889 # v1.44.1
         with:
           command: "response-time"
         env:
           GH_PAT: ${{ github.token }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
       - name: Update summary in README
-        uses: upptime/uptime-monitor@v1.43.0
+        uses: upptime/uptime-monitor@8be193bbcb957a3a917d2bb16a0c96959778a889 # v1.44.1
         with:
           command: "readme"
         env:
           GH_PAT: ${{ github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@v1.43.0
+        uses: upptime/uptime-monitor@8be193bbcb957a3a917d2bb16a0c96959778a889 # v1.44.1
         with:
           command: "site"
         env:
           GH_PAT: ${{ github.token }}
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         with:
           github_token: ${{ github.token }}
           publish_dir: "site/status-page/__sapper__/export/"
