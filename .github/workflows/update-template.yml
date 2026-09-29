@@ -16,12 +16,12 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ github.token }}
       - name: Update template
-        uses: upptime/updates@master
+        uses: upptime/updates@edd134de18545d80a4cad1f4114defc47447879a # v1.0.1
         with:
           command: "update-template"
         env:
