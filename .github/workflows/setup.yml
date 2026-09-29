@@ -32,7 +32,6 @@ jobs:
           command: "response-time"
         env:
           GH_PAT: ${{ github.token }}
-          SECRETS_CONTEXT: ${{ toJson(secrets) }}
       - name: Update summary in README
         uses: upptime/uptime-monitor@8be193bbcb957a3a917d2bb16a0c96959778a889 # v1.44.1
         with:
