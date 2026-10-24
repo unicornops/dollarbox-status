@@ -1,0 +1,21 @@
+# Response headers for status.dollarbox.dev. Upptime copies assets/* to the root
+# of the exported site (.github/workflows/site.yml), where Cloudflare Pages picks
+# this file up. Syntax: https://developers.cloudflare.com/pages/configuration/headers/
+#
+# The status page is a Sapper build whose bootstrap is an inline script that
+# feature-tests with eval() and registers a service worker, so script-src has to
+# keep 'unsafe-inline' and 'unsafe-eval'. The other directives still pin where
+# the page may fetch from (GitHub API and raw content for history and graphs),
+# forbid framing and plugins, and stop <base> and form hijacking. The build
+# writes some asset URLs with the canonical hostname (status-website.cname), so
+# that origin is listed next to 'self'; in production they are the same origin.
+# icons.duckduckgo.com serves the favicon shown beside each monitored site; set
+# sites[].icon in .upptimerc.yml to self-host those and drop it from img-src.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://status.dollarbox.dev 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://status.dollarbox.dev 'unsafe-inline'; img-src 'self' https://status.dollarbox.dev data: https://raw.githubusercontent.com https://icons.duckduckgo.com; font-src 'self' https://status.dollarbox.dev; connect-src 'self' https://status.dollarbox.dev https://api.github.com https://raw.githubusercontent.com; manifest-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
