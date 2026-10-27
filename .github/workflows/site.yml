@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '18'
       - name: Generate site
-        uses: upptime/uptime-monitor@8be193bbcb957a3a917d2bb16a0c96959778a889 # v1.44.1
+        uses: upptime/uptime-monitor@fefca90fa2ccfc66ca39a11f40dcc90236da05ac # v1.46.4
         with:
           command: "site"
         env:
