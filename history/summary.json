@@ -44,20 +44,21 @@
     "url": "https://app.dollarbox.dev/accounts/login/?next=/billing/",
     "icon": "https://icons.duckduckgo.com/ip3/app.dollarbox.dev.ico",
     "slug": "billing",
-    "status": "up",
+    "status": "down",
     "uptime": "99.97%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.97%",
-    "time": 804,
-    "timeDay": 505,
-    "timeWeek": 606,
-    "timeMonth": 1362,
-    "timeYear": 804,
+    "time": 1258,
+    "timeDay": 26116,
+    "timeWeek": 6996,
+    "timeMonth": 2843,
+    "timeYear": 1258,
     "dailyMinutesDown": {
       "2026-08-23": 32,
-      "2026-10-01": 32
+      "2026-10-01": 32,
+      "2026-10-29": 0
     }
   },
   {
